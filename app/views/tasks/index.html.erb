@@ -1,0 +1,12 @@
+<h1>TASK REMAINIG</h1>
+<% @tasks.each do |task| %>
+  <div style="display: flex; justify-content: space-between">
+  <h3><%= task.title %></h3>1
+<DIV style="justify-content: space-between  ">
+  <%= link_to "DONE", "/tasks/#{task.id}/destroy",:class => "btn btn-inverse" %><br>
+  <%= link_to "EDIT", "/tasks/#{task.id}/edit", :class => "btn btn-inverse" %>
+</DIV>
+ </div>
+  <p><%= task.body %></p>
+
+<% end %>

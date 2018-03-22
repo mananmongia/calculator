@@ -1,0 +1,12 @@
+<%= form_for @task , url: update_path do |f| %>
+
+  <%= f.label :title %>
+  <%= f.text_field :title, class: "form-control" %>
+  <br>
+  <%= f.label :body %>
+  <%= f.text_area :body, class: "form-control" %>
+  <br>
+
+  <%= f.submit 'UPDATE TODO', :class => 'btn btn-info btn-sm' %>
+  <hr>
+<% end %>
